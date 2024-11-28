@@ -1,0 +1,29 @@
+using System;
+
+static class ClsPerson
+{
+    
+    public static string FirstName { get; set; }
+    public static string LastName { get; set; }
+    public static int Id  { get; set; }
+ 
+
+}
+
+   internal class Program
+    {
+        static void Main(string[] args)
+        {
+        // ClsPerson Person1 = new ClsPerson("Aziza", "Diab", 123);//Error
+        ClsPerson.FirstName = "Aziza";
+        ClsPerson.LastName = "Diab";
+        ClsPerson.Id = 123;
+        Console.WriteLine("FirstName : {0} ", ClsPerson.FirstName);
+        Console.WriteLine("LastName  : {0} ", ClsPerson.LastName);
+        Console.WriteLine("ID : {0} ", ClsPerson.Id);
+
+
+        Console.ReadLine();
+        }
+    
+}
