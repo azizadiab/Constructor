@@ -1,0 +1,35 @@
+using System;
+
+class ClsPerson
+{
+    
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Id  { get; set; }
+ 
+
+    public ClsPerson()
+    {
+        FirstName = "Aziza";
+        LastName = "Diab";
+        Id = 123;
+    }
+
+
+}
+
+   internal class Program
+    {
+        static void Main(string[] args)
+        {
+        ClsPerson Person1 = new ClsPerson();
+
+        Console.WriteLine("FirstName : {0} ", Person1.FirstName);
+        Console.WriteLine("LastName  : {0} ", Person1.LastName);
+        Console.WriteLine("ID : {0} ", Person1.Id);
+       
+
+        Console.ReadLine();
+        }
+    
+}
