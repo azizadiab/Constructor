@@ -1,0 +1,45 @@
+using System;
+
+ class ClsPerson
+{
+    
+    public  string FirstName { get; set; }
+    public  string LastName { get; set; }
+    public  int Id  { get; set; }
+
+    public ClsPerson(string FirstName)
+    {
+        this.FirstName = FirstName;
+    }
+    public ClsPerson(string FirstName, string LastName)
+    {
+        this.FirstName = FirstName;
+        this.LastName = LastName;
+    }
+
+    public ClsPerson(string FirstName, string LastName, int Id)
+    {
+        this.FirstName = FirstName;
+        this.LastName = LastName;
+        this.Id = Id;
+    }
+}
+
+   internal class Program
+    {
+        static void Main(string[] args)
+        {
+       ClsPerson Person1 = new ClsPerson("Aziza");
+       ClsPerson Person2 = new ClsPerson("Aziza", "Diab");
+       ClsPerson Person3 = new ClsPerson("Aziza", "Diab", 123);
+       
+        
+        Console.WriteLine("FirstName : {0} ", Person1.FirstName);
+        Console.WriteLine("LastName  : {0} ", Person2.LastName);
+        Console.WriteLine("ID : {0} ", Person3.Id);
+
+
+        Console.ReadLine();
+        }
+    
+}
